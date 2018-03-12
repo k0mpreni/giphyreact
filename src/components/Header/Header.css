@@ -1,0 +1,8 @@
+.Header {
+    grid-column: 2/3;
+    grid-row: 1/1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(3rem, auto);
+    align-items: center;
+}

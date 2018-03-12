@@ -1,0 +1,14 @@
+.Title {
+    color: #FFBD39;
+    grid-column: 1/1;
+    grid-row: 1/1;
+    align-self: center;
+    justify-self: center;
+    font-family: 'Gears of Peace';
+    font-size: 5rem;
+}
+
+.link {
+    color: inherit;
+    text-decoration: none;
+}

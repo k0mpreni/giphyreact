@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Gears of Peace';
+  src: url('./public/GearsofPeace.woff2') format('woff2'),
+      url('./public/GearsofPeace.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SubZER0';
+  src: url('./public/SubZER0.woff2') format('woff2'),
+      url('./public/SubZER0.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.App {
+  font-family: 'SubZER0';  
+  display: grid;
+  grid-template-columns: 5rem 1fr 5rem;
+  grid-auto-rows: minmax(5rem, auto);
+}

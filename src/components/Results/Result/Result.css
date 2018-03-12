@@ -1,0 +1,14 @@
+.ResultImage {
+border: 0.5rem solid #FFBD39;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.favorited {
+  border: 0.5rem solid #E61C5D;
+}
+
+.Result:hover .Modal{
+  opacity: 1;
+}
