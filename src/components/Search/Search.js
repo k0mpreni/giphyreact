@@ -1,18 +1,31 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./Search.css";
+import React from 'react';
+import './Search.css';
 
-const Search = ({ onSubmit, onChange, value }) => (
-  <div className="Search">
-    <div className="SearchBar">
-      <form action="" id="form" onSubmit={onSubmit}>
-        <Link to={{ pathname: "/search/", search: `?q=${value}` }}>
+const Search = ({ value, changeValue, getGifs, history }) => {
+  const handleSubmit = event => {
+    event.preventDefault();
+    const searchParams = new URLSearchParams();
+    searchParams.set('q', value);
+    history.push({
+      pathname: '/search',
+      search: searchParams.toString()
+    });
+    return getGifs(value);
+  };
+  return (
+    <div className="Search">
+      <div className="SearchBar">
+        <form id="form" onSubmit={handleSubmit}>
           <button type="submit" className="SubmitBtn" />
-        </Link>
-        <input type="search" onChange={onChange} />
-      </form>
+          <input
+            type="search"
+            onChange={evt => changeValue(evt.target.value)}
+            value={value}
+          />
+        </form>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Search;

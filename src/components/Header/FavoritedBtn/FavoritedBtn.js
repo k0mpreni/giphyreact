@@ -2,10 +2,10 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./FavoritedBtn.css";
 
-const Favorited = ({ favClicked }) => {
+const Favorited = () => {
   return (
     
-      <button className="FavoritedBtn" onClick={favClicked}>
+      <button className="FavoritedBtn">
         <NavLink to="/favorited" activeClassName="selected">Favorited</NavLink>
       </button>
     

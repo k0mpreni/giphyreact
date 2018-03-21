@@ -1,7 +1,8 @@
 import {
   SEARCH_START,
   SEARCH_ERROR,
-  SEARCH_SUCCESS
+  SEARCH_SUCCESS,
+  CHANGE_VALUE
 } from "../constants/actionTypes";
 
 const initialState = {
@@ -12,20 +13,29 @@ const initialState = {
 };
 
 const search = (state = initialState, action) => {
-  const newState = state;
   switch (action.type) {
+    case CHANGE_VALUE:
+      return {
+        ...state,
+        value: action.payload
+      };
     case SEARCH_START:
-      newState.loading = true;
-      newState.value = action.value;
-      return newState;
+      return {
+        ...state, 
+        loading: true
+      };
     case SEARCH_SUCCESS:
-      newState.loading = false;
-      newState.results = action.payload;
-      return newState;
+      return {
+        ...state,
+        loading: false,
+        results: action.payload
+      };
     case SEARCH_ERROR:
-      newState.error = action.error;
-      newState.loading = false;
-      return newState;
+      return {
+        ...state,
+        loading: false,
+        error: action.payload
+      };
     default:
       return state;
   }

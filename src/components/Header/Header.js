@@ -4,11 +4,11 @@ import FavoritedBtn from "./FavoritedBtn";
 
 import "./Header.css";
 
-const header = ({ favClicked }) => {
+const header = () => {
   return (
     <div className="Header">      
       <Title />
-      <FavoritedBtn favClicked={favClicked}/>
+      <FavoritedBtn/>
     </div>
   );
 };
