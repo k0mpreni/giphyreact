@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title renders the Title component 1`] = `
+<h1
+  className="Title"
+>
+  <Link
+    className="link"
+    replace={false}
+    to="/"
+  >
+    Gif or Gif
+  </Link>
+</h1>
+`;

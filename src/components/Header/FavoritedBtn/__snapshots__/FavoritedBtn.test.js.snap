@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FavoritedBtn renders the FavoritedBtn component 1`] = `
+<button
+  className="FavoritedBtn"
+>
+  <NavLink
+    activeClassName="selected"
+    ariaCurrent="true"
+    to="/favorited"
+  >
+    Favorited
+  </NavLink>
+</button>
+`;

@@ -2,13 +2,14 @@
   grid-row-start: 3;
   grid-column-start: 2;
   color: #ffbd39;
-  display: flex;
+  display: grid;
   justify-content: center;
-  align-items: center;
+  justify-items: center;
 }
 
-.Home img {
+.Home p {
   margin: 1rem;
   width: 50%;
   height: auto;
+  justify-self: center;
 }
