@@ -1,34 +1,28 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
-import { createStore, applyMiddleware, compose } from "redux";
-import { Provider } from "react-redux";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { HashRouter } from 'react-router-dom';
+import { createStore, applyMiddleware, compose } from 'redux';
+import { Provider } from 'react-redux';
 
-import "./index.css";
-import App from "./container/App";
-import registerServiceWorker from "./registerServiceWorker";
-import reducers from "./reducers";
-import { loadFavorites, saveFavorites } from "./Utilities/favoritesUtils";
-import thunk from "redux-thunk";
+import './index.css';
+import App from './container/App';
+import registerServiceWorker from './registerServiceWorker';
+import reducers from './reducers';
+import { loadFavorites, saveFavorites } from './Utilities/favoritesUtils';
+import thunk from 'redux-thunk';
 
 const initialState = {
   favorites: loadFavorites()
 };
 
 const composeEnhancers =
-  typeof window === 'object' &&
-  window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?   
-    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({}) : compose;
+  typeof window === 'object' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+    ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({})
+    : compose;
 
-const enhancer = composeEnhancers(
-  applyMiddleware(thunk),
-);
+const enhancer = composeEnhancers(applyMiddleware(thunk));
 
-const store = createStore(
-  reducers,
-  initialState,
-  enhancer,
-);
+const store = createStore(reducers, initialState, enhancer);
 
 let oldFavorites = initialState.favorites;
 
@@ -42,10 +36,10 @@ store.subscribe(() => {
 
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </Provider>,
-  document.getElementById("root")
+  document.getElementById('root')
 );
 registerServiceWorker();
