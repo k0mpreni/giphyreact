@@ -4,7 +4,7 @@ import "./Result.css";
 
 import Modal from "../Modal/Modal";
 
-const Result = ({ favorites, gifInfo, onToggleFavorite, favorited }) => (
+const Result = ({ gifInfo, onToggleFavorite, favorited }) => (
   <div className="Result">
     <Modal
       onToggleFavorite={onToggleFavorite}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Title from './index';
+import Title from './Title';
 
 describe('Title', () => {
   it('renders the Title component', () => {

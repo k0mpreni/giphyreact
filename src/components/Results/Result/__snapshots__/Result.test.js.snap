@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Result renders the Result component 1`] = `
+<div
+  className="Result"
+>
+  <Modal
+    gif={
+      Object {
+        "id": 3,
+        "images": Object {
+          "fixed_height_downsampled": Object {
+            "url": "downsampled.gif",
+          },
+        },
+        "url": "url",
+      }
+    }
+    hrefLink="url"
+  />
+  <img
+    className="ResultImage"
+    id={3}
+    src="downsampled.gif"
+  />
+</div>
+`;
+
+exports[`Result renders the Result component favorited 1`] = `
+<div
+  className="Result"
+>
+  <Modal
+    gif={
+      Object {
+        "id": 3,
+        "images": Object {
+          "fixed_height_downsampled": Object {
+            "url": "downsampled.gif",
+          },
+        },
+        "url": "url",
+      }
+    }
+    hrefLink="url"
+  />
+  <img
+    className="ResultImage favorited"
+    id={3}
+    src="downsampled.gif"
+  />
+</div>
+`;

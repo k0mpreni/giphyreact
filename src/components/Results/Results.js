@@ -2,6 +2,7 @@ import React from "react";
 import "./Results.css";
 
 import Result from "./Result";
+import ResultsNumber from './ResultsNumber';
 
 const Results = ({ resultType, favorites, searchResults, toggleFavorites }) => {
   const favoriteIndexes = favorites.map(fav => fav.id);
