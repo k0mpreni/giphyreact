@@ -1,10 +1,14 @@
 {
-  "main.css": "static/css/main.e270f5d7.css",
-  "main.css.map": "static/css/main.e270f5d7.css.map",
-  "main.js": "static/js/main.e2bbc081.js",
-  "main.js.map": "static/js/main.e2bbc081.js.map",
-  "static/media/GearsofPeace.woff": "static/media/GearsofPeace.57fd7db5.woff",
-  "static/media/GearsofPeace.woff2": "static/media/GearsofPeace.d20c540a.woff2",
-  "static/media/SubZER0.woff": "static/media/SubZER0.a363bb45.woff",
-  "static/media/SubZER0.woff2": "static/media/SubZER0.8a1cdcca.woff2"
+  "main.css": "/giphyreact/static/css/main.f95e4df2.chunk.css",
+  "main.js": "/giphyreact/static/js/main.7e84f863.chunk.js",
+  "main.js.map": "/giphyreact/static/js/main.7e84f863.chunk.js.map",
+  "static/js/1.0c58f047.chunk.js": "/giphyreact/static/js/1.0c58f047.chunk.js",
+  "static/js/1.0c58f047.chunk.js.map": "/giphyreact/static/js/1.0c58f047.chunk.js.map",
+  "runtime~main.js": "/giphyreact/static/js/runtime~main.540b79ca.js",
+  "runtime~main.js.map": "/giphyreact/static/js/runtime~main.540b79ca.js.map",
+  "static/media/App.css": "/giphyreact/static/media/GearsofPeace.57fd7db5.woff",
+  "static/css/main.f95e4df2.chunk.css.map": "/giphyreact/static/css/main.f95e4df2.chunk.css.map",
+  "index.html": "/giphyreact/index.html",
+  "precache-manifest.e37be5c9a3b59d972aa0b8d2e9f0c45e.js": "/giphyreact/precache-manifest.e37be5c9a3b59d972aa0b8d2e9f0c45e.js",
+  "service-worker.js": "/giphyreact/service-worker.js"
 }
