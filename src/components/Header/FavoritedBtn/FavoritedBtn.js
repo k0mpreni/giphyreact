@@ -4,11 +4,11 @@ import './FavoritedBtn.css';
 
 const Favorited = () => {
   return (
-    <button className="FavoritedBtn">
+    <div className="FavoritedBtn">
       <NavLink to="/favorited" activeClassName="selected">
         Favorited
       </NavLink>
-    </button>
+    </div>
   );
 };
 
